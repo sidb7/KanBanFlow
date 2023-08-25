@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+
+#BackDrop
+{
+    background-image: url(jess-bailey-94Ld_MtIUf0-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.8;
+    z-index: -1;
+}
+#ListContainer
+{
+    background-color: rgba(255, 255, 255, 0.571);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#SearchInput
+{
+    outline: none;
+    border: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#closeButton:hover
+{
+  color: red;
+ scale: 1.2;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#closeButton:active
+{
+  color: rgb(142, 7, 7);
+ scale: 1;
 }
-
-.App-link {
-  color: #61dafb;
+#TaskContainer
+{   border: 1px solid rgba(128, 128, 128, 0.626);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.448);
+  
+    cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#TaskContainer:hover
+{
+    scale: 1.02;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.448);
+}
+#TaskContainer:active
+{
+    scale: 1.05;
+    cursor: grab;
 }
