@@ -41,7 +41,7 @@ const updateSubmit=(e)=>
 <input  id='SearchInput'
     onChange={e=>setTask({...task,id: uuidv4() ,name:e.target.value})}
     value={task.name}
-type="text" placeholder='Create Tasks'  className='border-2 w-100 fs-5 border-secondary rounded-5 px-3'/>
+type="text" placeholder='Create a new task'  className='border-2 w-100 fs-5 border-secondary rounded-5 px-3'/>
 
 
 <button onClick={updateSubmit} className='btn btn-danger fs-5 '>Create</button>

@@ -23,7 +23,7 @@ export default function Task({task,tasks,setTasks}) {
         localStorage.setItem("tasks",JSON.stringify(ftask))
     }
   return (
-    <div ref={drag} style={{opacity: (isDragging)?0.5:""}} id='TaskContainer' className='w-100 fs-5 bg-light rounded-2 position-relative d-flex p-2 align-items-center my-2 ' >
+    <div ref={drag} style={{opacity: (isDragging)?0.5:""}} id='TaskContainer' className='w-100 fs-5 bg-light rounded-2 text-start position-relative d-flex p-2 align-items-center my-2 ' >
   {task.name}
         
        
