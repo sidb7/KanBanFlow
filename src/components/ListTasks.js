@@ -9,12 +9,12 @@ export default function ListTasks({tasks,setTasks}) {
 
 useEffect(()=>
 {
-    const ftodos =  tasks.filter(task=>task.status==="todo")
-    const fInProgress =  tasks.filter(task=>task.status==="inprogress")
-    const fCompleted =  tasks.filter(task=>task.status==="completed")
-      setTodos(ftodos)
-      setInProgress(fInProgress)
-      setCompleted(fCompleted)
+    // const ftodos =  tasks.filter(task=>task.status==="todo")
+    // const fInProgress =  tasks.filter(task=>task.status==="inprogress")
+    // const fCompleted =  tasks.filter(task=>task.status==="completed")
+    //   setTodos(ftodos)
+    //   setInProgress(fInProgress)
+    //   setCompleted(fCompleted)
 },[tasks])
 
 const statuses = ["todo","inprogress","completed"]
