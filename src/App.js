@@ -23,7 +23,7 @@ useEffect(()=>
      
   <div className='position-relative d-flex justify-content-center w-100 '  >
     <Toaster/>
-    <div div className='w-100   position-absolute' >
+    <div div className='w-100  position-absolute' >
       <div id='BackDrop'></div>
     <CreateTasks tasks={tasks} setTasks={setTasks} />
     <ListTasks tasks={tasks} setTasks={setTasks} /></div>

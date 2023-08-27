@@ -47,11 +47,11 @@ const updateSubmit=(e)=>
 
     
   return (
-    <form className='text-center w-50 mt-5  d-flex gap-2 m-3 m-auto' >
+    <form className='text-center w-100 mt-5  d-flex gap-2 px-2 m-auto justify-content-center' >
 <input  id='SearchInput'
     onChange={e=>setTask({...task,id: uuidv4() ,name:e.target.value})}
     value={task.name}
-type="text" placeholder='Create a new task'  className='border-2 w-100 fs-5 border-secondary rounded-5 px-3'/>
+type="text" placeholder='Create a new task'  className='border-2 w-75 fs-4 border-secondary rounded-2 px-3'/>
 
 
 <button onClick={updateSubmit} className='btn btn-danger fs-5 '>Create</button>
