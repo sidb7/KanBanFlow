@@ -57,9 +57,11 @@ export default function SwimLanes({status,index, tasks, setTasks,  todos , inPro
 
   return (
     <>
-    <div ref={drop} id='ListContainer' className= {`m-5 w-100 rounded-3 border-2 border-${bg}  fs-4 `}  style={{border:"2px solid ",scale: (isOver)?"1.02":"1",boxShadow:(isOver)?"1px 1px 10px rgba(0, 0, 0, 0.448)":"" ,transition:"all 0.1s"}}>
+    <div ref={drop} id='ListContainer' className= {`p-0 col-lg-3 col-10 rounded-3  border-${bg}  fs-4 `}  style={{border:"2px solid ",scale: (isOver)?"1.02":"1",boxShadow:(isOver)?"1px 1px 10px rgba(0, 0, 0, 0.448)":"" ,transition:"all 0.2s"}}>
+   
    <Header text={text} bg={bg} count={tasksTOMap.length} />
-      <div  className='d-flex flex-column justify-content-center p-3 w-100' > 
+
+      <div  className='d-flex flex-column justify-content-center p-3' > 
         
         {tasksTOMap.length>0 && tasksTOMap.map(task=> <Task key={task.id} task={task} tasks={tasks} setTasks={setTasks} />)}
         

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Header({text,bg,count}) {
   return (
-    <div className={`bg-${bg} d-flex position-relative align-items-center`}>
+    <div className={`bg-${bg} d-flex position-relative w-100 align-items-center`}>
     <h2 className={` text-light w-100 d-flex  justify-content-center  `}>
         
             {text} 

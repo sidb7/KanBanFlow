@@ -19,17 +19,18 @@ useEffect(()=>
 },[])
 
   return (
-   <DndProvider backend={HTML5Backend}>
-    
-  <div className='position-relative  d-flex justify-content-center vh-100 w-100 '>
+   <DndProvider backend={HTML5Backend} >
+     
+  <div className='position-relative d-flex justify-content-center w-100 '  >
     <Toaster/>
-    <div div className='w-100 pt-3 mt-5' >
+    <div div className='w-100   position-absolute' >
+      <div id='BackDrop'></div>
     <CreateTasks tasks={tasks} setTasks={setTasks} />
-    <ListTasks tasks={tasks} setTasks={setTasks}/></div>
+    <ListTasks tasks={tasks} setTasks={setTasks} /></div>
 
   </div>
    
-  <div id='BackDrop'></div>
+
   </DndProvider>
   );
 }

@@ -47,7 +47,7 @@ const updateSubmit=(e)=>
 
     
   return (
-    <form className='text-center w-50  d-flex gap-2 m-3 m-auto' >
+    <form className='text-center w-50 mt-5  d-flex gap-2 m-3 m-auto' >
 <input  id='SearchInput'
     onChange={e=>setTask({...task,id: uuidv4() ,name:e.target.value})}
     value={task.name}

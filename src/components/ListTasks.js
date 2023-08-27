@@ -25,8 +25,8 @@ const statuses = ["todo","inprogress","completed"]
 
   return (
 
-   
-    <div className='text-center d-flex flex-lg-row  flex-column justify-content-center '>
+   <div className='container-fluid mt-5 mb-5 w-100 d-flex justify-content-center h-100 align-items-center '>
+    <div className='text-center w-100 gap-5 row d-flex justify-content-center ' >
         {
             statuses.map((status,index)=>
             <SwimLanes key={index} status={status} index={index} tasks={tasks} setTasks={setTasks} 
@@ -35,6 +35,6 @@ const statuses = ["todo","inprogress","completed"]
             )
         }
 
-    </div>
+    </div></div>
   )
 }
