@@ -57,7 +57,7 @@ export default function SwimLanes({status,index, tasks, setTasks,  todos , inPro
 
   return (
     <>
-    <div ref={drop} id='ListContainer' className= {`m-5 w-100 rounded-3 border-2 border-${bg}  fs-4 `}  style={{border:"2px solid ",scale: (isOver)?"1.02":"1",width:"20rem"}}>
+    <div ref={drop} id='ListContainer' className= {`m-5 w-100 rounded-3 border-2 border-${bg}  fs-4 `}  style={{border:"2px solid ",scale: (isOver)?"1.02":"1",boxShadow:(isOver)?"1px 1px 10px rgba(0, 0, 0, 0.448)":"" ,transition:"all 0.1s"}}>
    <Header text={text} bg={bg} count={tasksTOMap.length} />
       <div  className='d-flex flex-column justify-content-center p-3 w-100' > 
         

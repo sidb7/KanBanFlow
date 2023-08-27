@@ -21,9 +21,19 @@ const updateSubmit=(e)=>
 
     setTasks((prev)=>
     {
-        const List =[...prev,task]
-        localStorage.setItem("tasks",JSON.stringify(List));
-       return List; 
+        if(Array.isArray(prev))
+        {
+            const List =[...prev,task]
+            localStorage.setItem("tasks",JSON.stringify(List));
+           return List; 
+        }
+        else
+        {
+            const List =[task]
+            localStorage.setItem("tasks",JSON.stringify(List));
+           return List; 
+        }
+      
     })
     toast.success("Task Created")
     setTask({

@@ -9,7 +9,7 @@ export default function ListTasks({tasks,setTasks}) {
 
 useEffect(()=>
 {
-  if(tasks.length>0)
+  if(Array.isArray(tasks))
   {
 
 
@@ -26,7 +26,7 @@ const statuses = ["todo","inprogress","completed"]
   return (
 
    
-    <div className='text-center d-flex flex-lg-row flex-column justify-content-center '>
+    <div className='text-center d-flex flex-lg-row  flex-column justify-content-center '>
         {
             statuses.map((status,index)=>
             <SwimLanes key={index} status={status} index={index} tasks={tasks} setTasks={setTasks} 

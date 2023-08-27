@@ -21,7 +21,7 @@ useEffect(()=>
   return (
    <DndProvider backend={HTML5Backend}>
     
-  <div className='position-relative  d-flex justify-content-center vh-100 '>
+  <div className='position-relative  d-flex justify-content-center vh-100 w-100 '>
     <Toaster/>
     <div div className='w-100 pt-3 mt-5' >
     <CreateTasks tasks={tasks} setTasks={setTasks} />
