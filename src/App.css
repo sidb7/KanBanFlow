@@ -16,6 +16,7 @@
 @media (max-width: 1008px) {
     #BackDrop{
         height:100vh;
+        background-color: rgba(128, 128, 128, 0.577);
     }
 }
 #ListContainer
