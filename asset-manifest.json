@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/TrelloManagement/static/css/main.05eb8c2b.css",
+    "main.css": "/TrelloManagement/static/css/main.814599e8.css",
     "main.js": "/TrelloManagement/static/js/main.5ec7090c.js",
     "static/js/787.9538e3f3.chunk.js": "/TrelloManagement/static/js/787.9538e3f3.chunk.js",
     "static/media/jess-bailey-94Ld_MtIUf0-unsplash.jpg": "/TrelloManagement/static/media/jess-bailey-94Ld_MtIUf0-unsplash.61acd418ee0596545e24.jpg",
     "index.html": "/TrelloManagement/index.html",
-    "main.05eb8c2b.css.map": "/TrelloManagement/static/css/main.05eb8c2b.css.map",
+    "main.814599e8.css.map": "/TrelloManagement/static/css/main.814599e8.css.map",
     "main.5ec7090c.js.map": "/TrelloManagement/static/js/main.5ec7090c.js.map",
     "787.9538e3f3.chunk.js.map": "/TrelloManagement/static/js/787.9538e3f3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.05eb8c2b.css",
+    "static/css/main.814599e8.css",
     "static/js/main.5ec7090c.js"
   ]
 }
